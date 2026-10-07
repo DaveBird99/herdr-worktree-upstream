@@ -1,0 +1,10 @@
+id = "davidbird.worktree-upstream"
+name = "worktree-upstream"
+version = "0.1.0"
+min_herdr_version = "0.7.5"
+platforms = ["macos", "linux"]
+description = "Point a new worktree branch at its origin counterpart when one exists."
+
+[[events]]
+on = "worktree.created"
+command = ["bash", "track.sh"]
